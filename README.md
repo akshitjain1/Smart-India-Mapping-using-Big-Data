@@ -63,6 +63,43 @@ This project focuses on analyzing and visualizing air pollution data across Indi
 * Edge-detected image (Computer Vision)
 
 ---
+## 📷 Sample Outputs
+
+### 📊 PM10 Analysis Graph
+
+<img src="outputs/pm10_analysis.png" width="700"/>
+
+---
+
+### 📊 Top 10 Polluted Cities (AQI)
+
+<img src="outputs/top10_aqi.png" width="700"/>
+
+---
+
+### 📈 Population vs AQI (Demographic Insight)
+
+<img src="outputs/population_vs_aqi.png" width="700"/>
+
+---
+
+### 👁️ Computer Vision Output (Edge Detection)
+
+<img src="outputs/pm10_edges.png" width="700"/>
+
+---
+
+### 🗺️ Interactive Maps
+
+#### Basic Pollution Map
+
+👉 Open in browser:
+[View Map](outputs/india_pollution_map.html)
+
+#### Advanced AQI Heatmap
+
+👉 Open in browser:
+[View Heatmap](outputs/advanced_pollution_map.html)
 
 ## 🧠 Key Insights
 
