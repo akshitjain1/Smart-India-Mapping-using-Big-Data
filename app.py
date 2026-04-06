@@ -49,6 +49,34 @@ plt.savefig("outputs/top10_aqi.png")
 
 print("Top 10 AQI graph saved!\n")
 
+# ---------------- DEMOGRAPHIC ANALYSIS ---------------- #
+
+print("\nPerforming demographic analysis...\n")
+
+pop_df = pd.read_csv("data/city_population.csv")
+
+# merge with AQI data
+merged_df = pd.merge(pop_df, city_aqi.reset_index(), on="City")
+
+print("Population vs AQI:\n")
+print(merged_df)
+
+# plot
+plt.figure(figsize=(8,5))
+plt.scatter(merged_df["Population"], merged_df["AQI"])
+
+for i, row in merged_df.iterrows():
+    plt.text(row["Population"], row["AQI"], row["City"])
+
+plt.xlabel("Population")
+plt.ylabel("AQI")
+plt.title("Population vs Pollution (AQI)")
+
+plt.tight_layout()
+plt.savefig("outputs/population_vs_aqi.png")
+
+print("Demographic graph saved!\n")
+
 # ---------------- SMALL DATASET ---------------- #
 
 print("\nLoading small dataset...\n")
