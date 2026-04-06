@@ -1,137 +1,151 @@
-# Smart India Mapping using Big Data
+# 🌍 Smart India Mapping using Big Data
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
+  <img src="https://img.shields.io/badge/Project-Type%3A%20Academic-orange">
+  <img src="https://img.shields.io/badge/Data-Big%20Data-red">
+</p>
+
+---
 
 ## 📌 Overview
 
-This project focuses on analyzing and visualizing air pollution data across Indian cities using big data techniques. It combines environmental and demographic data to understand pollution trends and their relationship with population.
+This project analyzes and visualizes **air pollution trends across Indian cities** using **big data analytics, geospatial mapping, and demographic insights**.
+
+It combines:
+
+* 📊 Environmental data (PM10, AQI)
+* 🧑‍🤝‍🧑 Demographic data (population)
+* 🗺️ Geospatial visualization (maps & heatmaps)
+
+👉 Goal: **Understand how pollution varies geographically and how it relates to population density.**
 
 ---
 
 ## 🎯 Objectives
 
-* Analyze air pollution data (PM10, AQI) across cities
+* Analyze air pollution levels across cities
+* Identify highly polluted regions using AQI
 * Visualize pollution using graphs and interactive maps
-* Integrate demographic data (population) for deeper insights
-* Demonstrate the use of big data analytics in real-world scenarios
+* Integrate demographic data for deeper insights
+* Demonstrate real-world application of big data
 
 ---
 
 ## 📊 Datasets Used
 
-1. Government Dataset (data.gov.in)
-
-   * City-wise pollution data (North India)
-
-2. Large Dataset (Kaggle - city_day.csv)
-
-   * 29,000+ records of air quality data
-
-3. Demographic Dataset
-
-   * City population data (manually created)
+| Dataset             | Description                     |
+| ------------------- | ------------------------------- |
+| Government Dataset  | Pollution data (data.gov.in)    |
+| Kaggle Dataset      | 29,000+ city-wise AQI records   |
+| Demographic Dataset | Population data of major cities |
 
 ---
 
-## ⚙️ Technologies Used
+## ⚙️ Tech Stack
 
-* Python
-* Pandas (data processing)
-* Matplotlib (visualization)
-* Folium (geospatial mapping)
-* OpenCV (computer vision)
+* 🐍 Python
+* 📊 Pandas
+* 📈 Matplotlib
+* 🗺️ Folium
+* 👁️ OpenCV
 
 ---
 
 ## 🔍 Features
 
-* Data cleaning and preprocessing
-* PM10 pollution analysis
-* AQI-based city ranking
-* Interactive India map with markers
-* Heatmap visualization of pollution intensity
-* Population vs AQI analysis (demographic insight)
-* Edge detection using OpenCV
+✔ Data cleaning & preprocessing
+✔ PM10 trend analysis
+✔ AQI-based city ranking
+✔ Interactive India map
+✔ Heatmap visualization
+✔ Population vs AQI analysis
+✔ Computer Vision (Edge Detection)
 
 ---
 
-## 📈 Outputs
-
-* PM10 comparison graph
-* Top 10 polluted cities (AQI) graph
-* Population vs AQI scatter plot
-* Interactive pollution map
-* Advanced heatmap visualization
-* Edge-detected image (Computer Vision)
-
----
 ## 📷 Sample Outputs
 
-### 📊 PM10 Analysis Graph
+### 📊 PM10 Analysis
 
-<img src="outputs/pm10_analysis.png" width="700"/>
+<p align="center">
+  <img src="outputs/pm10_analysis.png" width="700"/>
+</p>
 
 ---
 
 ### 📊 Top 10 Polluted Cities (AQI)
 
-<img src="outputs/top10_aqi.png" width="700"/>
+<p align="center">
+  <img src="outputs/top10_aqi.png" width="700"/>
+</p>
 
 ---
 
-### 📈 Population vs AQI (Demographic Insight)
+### 📈 Population vs AQI
 
-<img src="outputs/population_vs_aqi.png" width="700"/>
-
----
-
-### 👁️ Computer Vision Output (Edge Detection)
-
-<img src="outputs/pm10_edges.png" width="700"/>
+<p align="center">
+  <img src="outputs/population_vs_aqi.png" width="700"/>
+</p>
 
 ---
 
-### 🗺️ Interactive Maps
+### 👁️ Edge Detection (Computer Vision)
 
-#### Basic Pollution Map
+<p align="center">
+  <img src="outputs/pm10_edges.png" width="700"/>
+</p>
 
-👉 Open in browser:
-[View Map](outputs/india_pollution_map.html)
+---
 
-#### Advanced AQI Heatmap
+## 🗺️ Interactive Maps
 
-👉 Open in browser:
-[View Heatmap](outputs/advanced_pollution_map.html)
+| Map Type             | Link                                                |
+| -------------------- | --------------------------------------------------- |
+| Basic Pollution Map  | [View Map](outputs/india_pollution_map.html)        |
+| Advanced AQI Heatmap | [View Heatmap](outputs/advanced_pollution_map.html) |
+
+---
 
 ## 🧠 Key Insights
 
-* Highly populated cities tend to have higher pollution levels
-* Certain cities show extreme AQI values indicating severe pollution
-* Heatmap helps identify pollution hotspots across India
+* Highly populated cities tend to show higher pollution levels
+* Certain cities exhibit extremely high AQI values
+* Heatmap reveals pollution hotspots across India
+* Pollution patterns correlate with urban density
 
 ---
 
 ## ⚠️ Limitations
 
-* Limited demographic data (only population considered)
+* Limited demographic features (only population used)
 * Coordinates are manually assigned
-* AQI_Bucket values are approximated for missing entries
+* Missing AQI categories approximated
 
 ---
 
 ## 🚀 How to Run
 
-1. Create virtual environment
+```bash
+# Step 1: Create virtual environment
+python -m venv venv
 
-2. Install dependencies:
-   pip install -r requirements.txt
+# Step 2: Activate environment
+venv\Scripts\activate   # Windows
 
-3. Run the project:
-   python app.py
+# Step 3: Install dependencies
+pip install -r requirements.txt
+
+# Step 4: Run project
+python app.py
+```
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates how big data analytics and geospatial visualization can be used to analyze environmental and demographic patterns, helping in better decision-making for sustainable development.
+This project demonstrates how **big data analytics + geospatial visualization + demographic insights** can be combined to analyze environmental challenges and support sustainable development decisions.
 
 ---
 
@@ -140,3 +154,10 @@ This project demonstrates how big data analytics and geospatial visualization ca
 * Har Aziz Singh
 * Kuldeep Jakhar
 * Akshit Jain
+
+---
+
+## ⭐ Acknowledgment
+
+* Government of India (data.gov.in)
+* Kaggle datasets
