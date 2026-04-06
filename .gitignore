@@ -1,6 +1,6 @@
 venv/
 __pycache__/
 *.pyc
-outputs/*.png
+# outputs/*.png
 # outputs/*.html
 .env
