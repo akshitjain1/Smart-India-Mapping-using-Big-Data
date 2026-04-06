@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aae6d0953307e1e2ca1bf443ece3f8ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aae6d0953307e1e2ca1bf443ece3f8ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aae6d0953307e1e2ca1bf443ece3f8ae = L.map(
+                "map_aae6d0953307e1e2ca1bf443ece3f8ae",
+                {
+                    center: [22.0, 78.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7f7cad48e8927c19faf3cf8fd9a6cae8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7f7cad48e8927c19faf3cf8fd9a6cae8.addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var marker_0144537682640c713a369e10f5a33917 = L.marker(
+                [23.0225, 72.5714],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_4767783060d03b25a1d8e78e76ad6d6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59fe02e2401be200ef2a9ecf4a637d7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65ebbcae6192928d297d16af7a89a129 = $(`<div id="html_65ebbcae6192928d297d16af7a89a129" style="width: 100.0%; height: 100.0%;">Ahmedabad AQI: 356.14</div>`)[0];
+                popup_59fe02e2401be200ef2a9ecf4a637d7d.setContent(html_65ebbcae6192928d297d16af7a89a129);
+            
+        
+
+        marker_0144537682640c713a369e10f5a33917.bindPopup(popup_59fe02e2401be200ef2a9ecf4a637d7d)
+        ;
+
+        
+    
+    
+                marker_0144537682640c713a369e10f5a33917.setIcon(icon_4767783060d03b25a1d8e78e76ad6d6e);
+            
+    
+            var marker_db9753fc09da6de05490abb690a47869 = L.marker(
+                [28.7041, 77.1025],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_792116ad8a29346549c6ee2a8fced3c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07c39af416a6978b1bb895f53032561a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e505cdbfacc835032b7b9bdb28bde16c = $(`<div id="html_e505cdbfacc835032b7b9bdb28bde16c" style="width: 100.0%; height: 100.0%;">Delhi AQI: 259.02</div>`)[0];
+                popup_07c39af416a6978b1bb895f53032561a.setContent(html_e505cdbfacc835032b7b9bdb28bde16c);
+            
+        
+
+        marker_db9753fc09da6de05490abb690a47869.bindPopup(popup_07c39af416a6978b1bb895f53032561a)
+        ;
+
+        
+    
+    
+                marker_db9753fc09da6de05490abb690a47869.setIcon(icon_792116ad8a29346549c6ee2a8fced3c4);
+            
+    
+            var marker_a2bae9b3b2bf3dd2028829fdc8aed442 = L.marker(
+                [25.5941, 85.1376],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_8349fdc31500cfb9ecdb91498276be67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d128d0eec6e428298dc62c7f0c75842 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e90446b2ff504f49d807e9ef387195d = $(`<div id="html_1e90446b2ff504f49d807e9ef387195d" style="width: 100.0%; height: 100.0%;">Patna AQI: 224.82</div>`)[0];
+                popup_9d128d0eec6e428298dc62c7f0c75842.setContent(html_1e90446b2ff504f49d807e9ef387195d);
+            
+        
+
+        marker_a2bae9b3b2bf3dd2028829fdc8aed442.bindPopup(popup_9d128d0eec6e428298dc62c7f0c75842)
+        ;
+
+        
+    
+    
+                marker_a2bae9b3b2bf3dd2028829fdc8aed442.setIcon(icon_8349fdc31500cfb9ecdb91498276be67);
+            
+    
+            var marker_3f8bb195b6eba1ee6cb8d9687313c93a = L.marker(
+                [28.4595, 77.0266],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_7e94c68b5fcabb7ae88f153fe19705ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75d3e42fa118f39196bac56289cc77bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb9d97b07a7a191b9038c59700eb93ef = $(`<div id="html_bb9d97b07a7a191b9038c59700eb93ef" style="width: 100.0%; height: 100.0%;">Gurugram AQI: 217.23</div>`)[0];
+                popup_75d3e42fa118f39196bac56289cc77bb.setContent(html_bb9d97b07a7a191b9038c59700eb93ef);
+            
+        
+
+        marker_3f8bb195b6eba1ee6cb8d9687313c93a.bindPopup(popup_75d3e42fa118f39196bac56289cc77bb)
+        ;
+
+        
+    
+    
+                marker_3f8bb195b6eba1ee6cb8d9687313c93a.setIcon(icon_7e94c68b5fcabb7ae88f153fe19705ed);
+            
+    
+            var marker_f8311e72b9d953dd12e68acf68240f1b = L.marker(
+                [26.8467, 80.9462],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_8d286aa9b1f3d05401286d711e301029 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43a40a1d1f4c0310a5bec82cfb511f40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ac409c5f6ae2cd59a0771cca882edb1 = $(`<div id="html_7ac409c5f6ae2cd59a0771cca882edb1" style="width: 100.0%; height: 100.0%;">Lucknow AQI: 215.00</div>`)[0];
+                popup_43a40a1d1f4c0310a5bec82cfb511f40.setContent(html_7ac409c5f6ae2cd59a0771cca882edb1);
+            
+        
+
+        marker_f8311e72b9d953dd12e68acf68240f1b.bindPopup(popup_43a40a1d1f4c0310a5bec82cfb511f40)
+        ;
+
+        
+    
+    
+                marker_f8311e72b9d953dd12e68acf68240f1b.setIcon(icon_8d286aa9b1f3d05401286d711e301029);
+            
+    
+            var marker_35e47efd359e6c3250e8185735dae749 = L.marker(
+                [20.95, 85.2167],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_aeab942baa3d34ce5004e34c028660ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_186c0b0d8e1168f802beb66fbf001c87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1d37d593721802b33cca9c6ee3f1ed1 = $(`<div id="html_c1d37d593721802b33cca9c6ee3f1ed1" style="width: 100.0%; height: 100.0%;">Talcher AQI: 171.31</div>`)[0];
+                popup_186c0b0d8e1168f802beb66fbf001c87.setContent(html_c1d37d593721802b33cca9c6ee3f1ed1);
+            
+        
+
+        marker_35e47efd359e6c3250e8185735dae749.bindPopup(popup_186c0b0d8e1168f802beb66fbf001c87)
+        ;
+
+        
+    
+    
+                marker_35e47efd359e6c3250e8185735dae749.setIcon(icon_aeab942baa3d34ce5004e34c028660ca);
+            
+    
+            var marker_16005e1df6981d4ff49c7b07d5a35c1a = L.marker(
+                [23.7167, 86.4167],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_ceaf4e66cc42adca48d742a14727aeed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1dd689ce4fe45c5595375183514867df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf0ea1a4574fca701f77d14848f87cac = $(`<div id="html_cf0ea1a4574fca701f77d14848f87cac" style="width: 100.0%; height: 100.0%;">Jorapokhar AQI: 161.71</div>`)[0];
+                popup_1dd689ce4fe45c5595375183514867df.setContent(html_cf0ea1a4574fca701f77d14848f87cac);
+            
+        
+
+        marker_16005e1df6981d4ff49c7b07d5a35c1a.bindPopup(popup_1dd689ce4fe45c5595375183514867df)
+        ;
+
+        
+    
+    
+                marker_16005e1df6981d4ff49c7b07d5a35c1a.setIcon(icon_ceaf4e66cc42adca48d742a14727aeed);
+            
+    
+            var marker_198dbe584cc2e6d659eba67bc6d5e4e5 = L.marker(
+                [21.8167, 83.9167],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_e4761a1e4339bc32ad2c31b073382d3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68e8fb203ba2cbcfc7f32e9553b6ba03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51470e0df8f9bf19fe194a91987d74c4 = $(`<div id="html_51470e0df8f9bf19fe194a91987d74c4" style="width: 100.0%; height: 100.0%;">Brajrajnagar AQI: 154.16</div>`)[0];
+                popup_68e8fb203ba2cbcfc7f32e9553b6ba03.setContent(html_51470e0df8f9bf19fe194a91987d74c4);
+            
+        
+
+        marker_198dbe584cc2e6d659eba67bc6d5e4e5.bindPopup(popup_68e8fb203ba2cbcfc7f32e9553b6ba03)
+        ;
+
+        
+    
+    
+                marker_198dbe584cc2e6d659eba67bc6d5e4e5.setIcon(icon_e4761a1e4339bc32ad2c31b073382d3f);
+            
+    
+            var marker_75fa3da00082f0f6d09be7fdf3f99f50 = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_6a0dfc5033c84a560871e6a4b57d37c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_426f0c7a36ad11cfbd6b5fc4d6077023 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_575a47796642a34cb4cd33b6cc636662 = $(`<div id="html_575a47796642a34cb4cd33b6cc636662" style="width: 100.0%; height: 100.0%;">Mumbai AQI: 142.89</div>`)[0];
+                popup_426f0c7a36ad11cfbd6b5fc4d6077023.setContent(html_575a47796642a34cb4cd33b6cc636662);
+            
+        
+
+        marker_75fa3da00082f0f6d09be7fdf3f99f50.bindPopup(popup_426f0c7a36ad11cfbd6b5fc4d6077023)
+        ;
+
+        
+    
+    
+                marker_75fa3da00082f0f6d09be7fdf3f99f50.setIcon(icon_6a0dfc5033c84a560871e6a4b57d37c9);
+            
+    
+            var marker_e3edf78d1864ec3ae23751def1836829 = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+    
+            var icon_d570ce3e4435987d6badf42092d9d481 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0d2f64122b3a0488d6c499fe134df1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96532e94dc5cd31a9bc65806c40a88fe = $(`<div id="html_96532e94dc5cd31a9bc65806c40a88fe" style="width: 100.0%; height: 100.0%;">Kolkata AQI: 142.48</div>`)[0];
+                popup_a0d2f64122b3a0488d6c499fe134df1d.setContent(html_96532e94dc5cd31a9bc65806c40a88fe);
+            
+        
+
+        marker_e3edf78d1864ec3ae23751def1836829.bindPopup(popup_a0d2f64122b3a0488d6c499fe134df1d)
+        ;
+
+        
+    
+    
+                marker_e3edf78d1864ec3ae23751def1836829.setIcon(icon_d570ce3e4435987d6badf42092d9d481);
+            
+    
+            var heat_map_bf9c35dd77af2a447a2bc66603e31ccd = L.heatLayer(
+                [[23.0225, 72.5714, 356.14480712047293], [28.7041, 77.1025, 259.0247067271724], [25.5941, 85.1376, 224.8223729892812], [28.4595, 77.0266, 217.2279746375813], [26.8467, 80.9462, 214.99889270916688], [20.95, 85.2167, 171.31052215998696], [23.7167, 86.4167, 161.70701918955996], [21.8167, 83.9167, 154.1623729584329], [19.076, 72.8777, 142.88902914750824], [22.5726, 88.3639, 142.47520256675188]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_bf9c35dd77af2a447a2bc66603e31ccd.addTo(map_aae6d0953307e1e2ca1bf443ece3f8ae);
+        
+</script>
+</html>
