@@ -18,7 +18,7 @@ print(big_df.head())
 print("\nCleaning big dataset...\n")
 
 big_df['Date'] = pd.to_datetime(big_df['Date'], errors='coerce')
-big_df['AQI_Bucket'].fillna("Moderate", inplace=True)
+big_df['AQI_Bucket'] = big_df['AQI_Bucket'].fillna("Moderate")
 print("Missing values before cleaning:\n")
 print(big_df.isnull().sum())
 
